@@ -122,3 +122,27 @@ body footer div.footer-right{
 body footer div.footer-right img{
   width:500px;
 }
+/*@-webkit-keyframes greenPulse {
+  from { background-color: #749a02;99CC99 -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #91bd09; 99CCCC-webkit-box-shadow: 0 0 18px #91bd09; }
+  to { background-color: #749a02; 99CCFF-webkit-box-shadow: 0 0 9px #333; }
+}*/
+@-webkit-keyframes greenPulse {
+  from { background-color: #99CC99; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #99CCCC;-webkit-box-shadow: 0 0 18px #99CCCC; }
+  to { background-color: #99CCCC;-webkit-box-shadow: 0 0 9px #333; }
+}
+button {
+-webkit-animation-name: greenPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  border:none;
+  cursor:pointer;
+  margin:10px;
+  padding:10px;
+  color:white;
+
+}

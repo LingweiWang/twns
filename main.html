@@ -45,108 +45,55 @@
           ￥35元
         </p>
       </div>
+
     </header>
     <div id="body">
-      <div id="disc" class="products">
+      <div  class="products">
         <p>
         光盘
         </p><hr/>
-        <ul>
-          <li>
-            <p class="center">
-              <strong>小清新光盘</strong>
-            </p>
-            <img src="imgs/pics/disk/fancy-disk.jpg" alt="" />
-            <p>
-              小清新、小文艺 35元/10张
-            </p>
-          </li>
-          <li>
-            <p class="center">
-              <strong>婚庆光盘</strong>
-            </p>
-            <img src="imgs/pics/disk/marriage-disk.jpg" alt="" />
-            <p>
-              记录你的美好瞬间 50元/10张
-            </p>
-          </li>
-          <li>
-            <p class="center">
-              <strong>1TB大容量光盘</strong>
-            </p>
-            <img src="imgs/pics/disk/1TB-disk.jpg" alt="" />
-            <p>
-              解放你的硬盘 100元/10张
-            </p>
-          </li>
+        <div class="toolbar">
+          <input id="discName" placeholder = "请输入商品名称">
+          <input id="discImg" placeholder = "请输入商品图片链接">
+          <input id="discDesc" placeholder = "请输入商品描述">
+          <button onclick="add('disc',disks)">添加</button>
+          <input id="discSearch" placeholder="请输入搜索条件" onkeyup="search('disc',disks)">
+        </div>
+
+        <ul id="disc">
+
         </ul>
       </div>
-    <div id="u-disc" class="products">
+    <div  class="products">
       <p>
       U盘
       </p><hr/>
-      <ul>
-        <li>
-          <p class="center">
-            <strong>Q版U盘</strong>
-          </p>
-          <img src="imgs/pics/U-disk/pig-U-disk.jpg" alt="" />
-          <p>
-            2GB萌萌哒小猪猪 20元
-          </p>
-        </li>
-        <li>
-          <p class="center">
-            <strong>手机U盘</strong>
-          </p>
-          <img src="imgs/pics/U-disk/mobile-phone-disk.jpg" alt="" />
-          <p>
-            2GB手机、电脑两用U盘 25元
-          </p>
-        </li>
-        <li>
-          <p class="center">
-            <strong>大容量U盘</strong>
-          </p>
-          <img src="imgs/pics/U-disk/32GB-U-disk.jpg" alt="" />
-          <p>
-            32GB超大容量U盘 100元/10张
-          </p>
-        </li>
+      <div class="toolbar">
+        <input id="u-discName" placeholder = "请输入商品名称">
+        <input id="u-discImg" placeholder = "请输入商品图片链接">
+        <input id="u-discDesc" placeholder = "请输入商品描述">
+        <button onclick="add('u-disc',flashDisks)">添加</button>
+        <input id="u-discSearch" placeholder="请输入搜索条件" onkeyup="search('u-disc',flashDisks)">
+      </div>
+      <ul id="u-disc">
+
       </ul>
     </div>
-    <div id="hard-disc" class="products">
+    <div  class="products">
       <p>
       硬盘
       </p><hr/>
-      <ul>
-        <li>
-          <p class="center">
-            <strong>固态硬盘</strong>
-          </p>
-          <img src="imgs/pics/hard-disk/ssd-disk.JPG" alt="" />
-          <p>
-            128GB固态硬盘 250元
-          </p>
-        </li>
-        <li>
-          <p class="center">
-            <strong>台式机硬盘</strong>
-          </p>
-          <img src="imgs/pics/hard-disk/normal-disk.jpg" alt="" />
-          <p>
-            500GB台式机硬盘 300元
-          </p>
-        </li>
-        <li>
-          <p class="center">
-            <strong>笔记本硬盘</strong>
-          </p>
-          <img src="imgs/pics/hard-disk/small-disk.jpg" alt="" />
-          <p>
-            320GB笔记本用小硬盘 250元
-          </p>
-        </li>
+      <div class="toolbar">
+        <input id="hard-discName" placeholder = "请输入商品名称">
+        <input id="hard-discImg" placeholder = "请输入商品图片链接">
+        <input id="hard-discDesc" placeholder = "请输入商品描述">
+        <button onclick="add('hard-disc',hardDisks)">添加</button>
+
+        <input id="hard-discSearch" placeholder="请输入搜索条件" onkeyup="search('hard-disc',hardDisks)">
+
+      </div>
+      <ul id="hard-disc">
+
       </ul>
     </div>
     </div>
@@ -171,4 +118,8 @@
        </div>
     </footer>
   </body>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/underscore-min.js"></script>
+  <script type="text/javascript" src="js/fakedata.js"></script>
+  <script type="text/javascript" src="js/disksLists.js"></script>
 </html>
